@@ -9,6 +9,7 @@ string password;
 string server;
 
 #define fname "sx.txt"
+#define LNS "220.191.128.9"
 
 void init() {
 	ifstream fin(fname);
@@ -22,8 +23,9 @@ void init() {
 		cin >> username;
 		cout << "please input your password :" << endl;
 		cin >> password;
-		cout << "please input vpn server, if you don't know, please contact the author :" << endl;
-		cin >> server;
+		//cout << "please input vpn server, if you don't know, please contact the author :" << endl;
+		//cin >> server;
+		server = LNS;
 		ofstream fout(fname);
 		fout << username << endl << password << endl << server << endl;
 	}
