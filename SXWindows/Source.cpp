@@ -44,5 +44,6 @@ int main() {
 		return -1;
 	}
 	cout << "vpn dial up success." << endl;
+	Sleep(2000);
 	return 0;
 }

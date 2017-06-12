@@ -4,8 +4,8 @@
 #pragma comment(lib, "rasapi32.lib")
 #include "SXException.h"
 #include "HashUtils.h"
-#include <vector>
-#include <algorithm>
+//#include <vector>
+//#include <algorithm>
 using namespace std;
 
 class VpnUtils {
@@ -26,7 +26,7 @@ public:
 		pras->dwfOptions = RASEO_RemoteDefaultGateway;
 
 		pras->dwVpnStrategy = VS_L2tpOnly;
-		pras->dwfOptions |= RASEO_RequireCHAP | RASEO_RequirePAP;
+		pras->dwfOptions |= RASEO_RequireCHAP | RASEO_RequirePAP | RASEO_RequireMsCHAP2;
 		pras->dwfOptions2 |= RASEO2_DisableIKENameEkuCheck;
 		RasSetEntryProperties(NULL, name.c_str(), pras, pras->dwSize, NULL, 0);
 		RASCREDENTIALS ras_cre = { 0 };

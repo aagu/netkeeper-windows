@@ -1,7 +1,7 @@
 #pragma once
 #include "SXException.h"
 #include <vector>
-#include <windows.h>
+#include <Windows.h>
 #include <Wincrypt.h>
 using namespace std;
 
