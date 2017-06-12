@@ -38,9 +38,9 @@ int main() {
 	}
 	catch (exception &ex) {
 		cout << ex.what() << endl;
+		system("pause");
 		return -1;
 	}
 	cout << "vpn dial up success." << endl;
-	system("pause");
 	return 0;
 }
