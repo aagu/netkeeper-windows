@@ -18,11 +18,11 @@ void init() {
 	}
 	else {
 		cout << "could not find config file." << endl;
-		cout << "please input your sx username, with @ZJUA.XY :";
+		cout << "please input your sx username, with @LGDX.XY :" << endl;
 		cin >> username;
 		cout << "please input your password :" << endl;
 		cin >> password;
-		cout << "please input vpn server, if you don't know, please input lns.zju.edu.cn :" << endl;
+		cout << "please input vpn server, if you don't know, please contact the author :" << endl;
 		cin >> server;
 		ofstream fout(fname);
 		fout << username << endl << password << endl << server << endl;

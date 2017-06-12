@@ -64,7 +64,7 @@ vector<uint8_t> SXEncryption::calculateRealUsername()
 
 void SXEncryption::raiseVpn()
 {
-	VpnUtils::createVpn("zjuvpn", calculateRealUsername(), passwd, server);
+	VpnUtils::createVpn("zstuvpn", calculateRealUsername(), passwd, server);
 }
 
 
