@@ -16,6 +16,6 @@ private:
 	string server;
 public:
 	SXEncryption(string username, string password, string server);
-	vector<sxbyte> calculateRealUsername();
-	void raiseVpn();
+	vector<sxbyte> calculateRealUsername(bool flag);
+	void raiseVpn(bool flag);
 };
